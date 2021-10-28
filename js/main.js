@@ -3,6 +3,208 @@
 
 
 
+
+
+
+/*ブロックで囲むについて*/
+//複数のスクリプトを使う場合にはブロック（{}）で囲む必要がある
+// {
+//   const x = 100;
+//   console.log(x);
+// }
+
+
+
+/*スコープ（有効範囲）*/
+//ブロックのあるとこでは定数や変数のスコープが分かれる
+// const x = 2;
+
+// function f(){
+//   // const x = 1;
+//   console.log(x);
+// }
+
+// f();
+// console.log(x);
+
+
+
+/*アロー関数*/
+// const sum = (a,b,c) => a + b + c;
+
+// const total = sum(1,2,3) + sum(3,4,5);
+// console.log(total);
+
+// const double = function(a){
+//   return a * 2;
+// };
+// const double = a => a * 2
+// console.log(double(12));
+
+
+
+/*関数宣言と関数式*/
+/*関数宣言
+function 関数名（仮引数,仮引数, ....）{
+  処理;
+  処理;
+  return 返り値;
+}
+呼び出し
+関数名（実引数,実引数,...）;
+
+関数式
+const 定数名　= function(仮引数,仮引数, ....){
+  処理;
+  処理;
+  return 返り値;
+};
+呼び出し
+定数名（実引数,実引数,...）; */
+
+// function sum (a,b,c){
+//   return a + b + c;
+// }
+
+// const sum = function(a,b,c){
+//   return a + b + c;
+// };
+
+// const total = sum(1,2,3) + sum(3,4,5);
+// console.log(total);
+
+
+
+
+/*returnについて（戻り値）*/
+// function sum(a,b,c){
+//   // console.log(a + b + c);
+//   return a + b + c;
+//   console.log(a + b + c);
+// }
+
+// // sum(1,2,3);
+// // sum(3,4,5);
+
+// const total = sum(1,2,3) + sum(3,4,5); // 18
+// // console.log(total);
+
+/*引数について*/
+// function showAd(message = 'Ad'){ // 仮引数
+//   console.log('----------');
+//   console.log(`----${message}----`);
+//   console.log('----------');
+// }
+
+// showAd('Header AD'); // 実引数
+// console.log('Tom is great!');
+// console.log('Bob is great!');
+// showAd('Ad');
+// showAd();
+// console.log('Steve is great!');
+// console.log('Richard is great!');
+// showAd('Footer Ad');
+
+
+/*関数の定義と呼び出し*/
+// function showAd(){
+//   console.log('----------');
+//   console.log('----Ad----');
+//   console.log('----------');
+// }
+
+// showAd();
+// console.log('Tom is great!');
+// console.log('Bob is great!');
+// showAd();
+// console.log('Steve is great!');
+// console.log('Richard is great!');
+// showAd();
+
+
+
+/*continueとbreakについて*/
+// for (let i = 1; i <= 10; i++){
+  // if (i === 4){
+  //   if (i % 3 === 0){
+  //   continue;
+  // }
+//   if (i === 4){
+//     break;
+//   }
+//   console.log(i);
+// }
+
+
+
+/*while文について*/
+// let hp = 100;
+
+// while (hp > 0){
+//   console.log(`${hp}HP left!`);
+//   hp -= 15;
+// }
+
+
+
+/*do while構文について*/
+// let hp = -50;
+
+// do{
+//   console.log(`${hp}HP left!`);
+//   hp -= 15;
+// }while (hp > 0);
+
+
+/*for文とテンプレートリテラル*/
+// for (let i = 1; i <= 10; i++){
+//   // console.log('hello');
+//   // console.log('hello' + i);
+//   console.log(`hello${i}`);
+// }
+
+
+
+/*switch文*/
+// const signal = 'pink';
+
+// switch (signal){
+//   case 'red':
+//     console.log('Stop!');
+//     break;
+//   case 'yellow':
+//     console.log('Caution!');
+//     break;
+//   case 'blue':
+//   case 'green':
+//     console.log('Go!');
+//     break;
+//   default:
+//     console.log('Wrong signal!');
+//     break;
+// }
+
+
+
+/*論理演算子*/
+// const score = 60;
+// const name = 'taguti';
+// && なおかつ(AND)
+// || もしくは(OR)
+// ! ~ではない(NOT)
+// if (score >= 50 && name === 'taguti'){
+//   console.log('Good job!');
+// }
+
+
+
+/*条件演算子について*/
+// 条件式 ？ trueの処理：falseの処理
+// const score = 85;
+// score >= 80 ? console.log('Great!') : console.log('OK...');
+
+
+
 /*if文について*/
 //if(条件式A){
 //   trueだった時の処理
